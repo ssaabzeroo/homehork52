@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create article</title>
+
+</head>
+<body>
+{% csrf_token %}
+    <div>
+        <p>Кот - {{name}}</p>
+        <p>Возраст - {{age}}</p>
+        <p>Счастье - {{happiness}}</p>
+        <p>Сытость - {{satiety}}</p>
+    </div>
+    <div><img src="{{photo}}" width="400" height="400"  alt="cat"></div>
+<form action="" method="GET">
+
+    <select name="actions">
+        <option value="eat">покормить</option>
+
+        <option value="play">поиграть</option>
+
+        <option value="sleep">уложить спать</option>
+    </select>
+    <button>подтвердить</button>
+</form>
+</div>
+
+</body>
+</html>
